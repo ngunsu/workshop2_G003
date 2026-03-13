@@ -1,0 +1,23 @@
+[project]
+name = "taller-evaluado-02"
+version = "0.1.0"
+description = "Taller 02 - Evaluación AES-256-CBC"
+requires-python = ">=3.11"
+dependencies = [
+    "pycryptodome>=3.23.0",
+    "typer[all]>=0.9.0",
+    "rich>=13.7.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "ruff>=0.15.5",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "N", "W"]
+

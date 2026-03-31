@@ -1,0 +1,21 @@
+[project]
+name = "taller-evaluado-02"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.14"
+dependencies = [
+	"pycryptodome>=3.23.0",
+	"pytest>=9.0.2",
+	"typer[all]>=0.24.1",
+]
+
+[dependency-groups]
+dev = [
+	"ruff>=0.15.5",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "N", "W"]
